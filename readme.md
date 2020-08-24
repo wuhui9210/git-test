@@ -11,3 +11,6 @@ ssh-keygen -t rsa -C "wuhui9210@163.com"
 
 ##查看公钥
 cat ~/.ssh/id_rsa.pub
+
+
+hello
