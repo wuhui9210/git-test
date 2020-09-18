@@ -7,4 +7,4 @@ print('hehe')
 print('hello')
 
 print('hello world')
-print('hello python')
+print('hello java')
