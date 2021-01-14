@@ -1,0 +1,25 @@
+################# launcher ##################
+platformName: Android
+platformVersion: 4.4.2
+deviceName: 192.168.3.4:5555
+udid: 192.168.3.4:5555
+noReset: True
+#appName: kaoyan3.1.0.apk
+appPackage: com.huawei.sd.yd.launcher
+appActivity: .LauncherActivity
+noSign: False
+autoLaunch: False
+automationName: UiAutomator1
+unicodeKeyboard: True
+resetKeyboard: True
+
+appium:
+    ip: 127.0.0.1
+    port: 4723
+
+#mx4真机
+#platformVersion: 5.1
+#udid: 750BBKL22GDN
+#deviceName: MX4
+
+

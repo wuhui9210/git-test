@@ -10,6 +10,10 @@ import platform
 import re
 import time
 
+from Utils.log_tools import Logs
+
+logger = Logs().logger
+
 
 class AdbTools(object):
     """ adb命令工具类 """

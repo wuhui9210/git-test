@@ -6,7 +6,7 @@
 # @Author: WU
 # ==============================
 from Utils.adb_tools import AdbTools
-from Utils.param_tools import RunningParams
+from Utils.running_params import RunningParams
 
 if __name__ == '__main__':
     device = RunningParams().get_devices()

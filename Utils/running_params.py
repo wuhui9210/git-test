@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # ==============================
-# @File  : param_tools.py
+# @File  : running_params.py
 # @Time  : 2020-12-11 15:09
 # @Author: WU
 # ==============================
@@ -25,9 +25,11 @@ class RunningParams:
     def __init__(self):
         # 创建解析对象
         parse = argparse.ArgumentParser()
-        # 向命令行添加命令和选项
+        # 运行时指定设备
         parse.add_argument('-d', '--devices', type=str, required=True, help='连接的设备')
+        # 运行时指定用例，非必填
         parse.add_argument('-c', '--case', type=str, required=False, help='指定的用例', default='all')
+        #
         # 解析参数
         self.args = parse.parse_args()
 
