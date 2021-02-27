@@ -5,9 +5,21 @@
 # @Time  : 2021-1-12 16:14
 # @Author: WU
 # ==============================
-import os
 
-filename = r'C:\Users\dell\Desktop\file.txt'
-with open(filename, 'r', encoding='utf-8') as f:
-    for i in f:
+
+def write_file():
+    with open('1.txt', 'w', encoding='utf-8') as f:
+        for i in range(100):
+            f.write(f'{i}' + '\n')
+
+
+def read_file():
+    files = open('1.txt', 'r', encoding='utf-8')
+    for i in files:
         print(i.strip())
+    files.close()
+
+
+if __name__ == '__main__':
+    # write_file()
+    read_file()
